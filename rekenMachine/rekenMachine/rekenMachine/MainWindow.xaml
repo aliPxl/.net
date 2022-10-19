@@ -1,0 +1,24 @@
+﻿<Window x:Class="rekenMachine.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:rekenMachine"
+        mc:Ignorable="d"
+        Title="rekenmachine" Height="450" Width="800">
+    <Grid>
+        <Button Name ="btnPlus" HorizontalAlignment="Left" Margin="530,140,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Btnplus_Click">
+            <Label Content="+"/>
+        </Button>
+        <Button Content="x" Name ="times" HorizontalAlignment="Left" Height="29" Margin="600,140,0,0" VerticalAlignment="Top" Width="30" Click="times_Click"/>
+        <Button Content="-" Name ="min" HorizontalAlignment="Left" Margin="530,216,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.318,0.486" Width="30" Height="30" Click="min_Click"/>
+        <Button Content=":" Name ="dividing" HorizontalAlignment="Left" Margin="600,216,0,0" VerticalAlignment="Top" Click="Button_Click" Height="29" Width="30"/>
+        <TextBox Name ="getal1" HorizontalAlignment="Left" Height="30" Margin="370,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
+        <TextBox Name ="getal2" HorizontalAlignment="Left" Height="30" Margin="370,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+        <Label Content="getal 1" HorizontalAlignment="Left" Margin="288,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.776,1.266" Width="60"/>
+        <Label Content="getal 2" HorizontalAlignment="Left" Margin="288,216,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label Content="resultaat" HorizontalAlignment="Left" Margin="288,300,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.776,1.266" Width="60"/>
+        <TextBox Name="resultaat" HorizontalAlignment="Left" Height="30" Margin="370,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" TextChanged="resultaat_TextChanged"/>
+        <Button Content="wissen" Name="wissen"  HorizontalAlignment="Left" Margin="530,305,0,0" VerticalAlignment="Top" Click="Button_Wissen" Height="20" Width="70"/>
+    </Grid>
+</Window>
